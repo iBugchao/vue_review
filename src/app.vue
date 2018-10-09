@@ -11,11 +11,17 @@
 		年龄：<input type="text" v-model="age"/><br />
 		成绩：<input type="text" v-model="score"/>
 		<button @click="addStu()">添加学生</button>-->
-		<header-vue hello="hello world"></header-vue>
+		<!--<header-vue hello="hello world"></header-vue>
 		<body-vue :you="str"></body-vue>
 		<footer-vue></footer-vue>
 		<button @click="listen">接收子组件的值</button>
-		<input type="text" v-model="str1" />{{str1 | filter1}}
+		<input type="text" v-model="str1" />{{str1 | filter1}}-->
+		<ul>
+			<router-link :to="{name:'haha',query:{id:1}}">aaaa</router-link>
+			<router-link :to="{name:'xixi',params:{age:12}}">bbbb</router-link>
+			<router-link :to="{name:'haha',query:{id:1}}">cccc</router-link>
+		</ul>
+		<router-view></router-view>
 	</div>
 </template>
 
